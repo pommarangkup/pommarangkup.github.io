@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+<style>
+
+body { display: none;
+}
+.span3:focus ~ .alert {
+  display: none;
+}
+.span2:focus ~ .alert {
+  display: block;
+}
+
+.span4:focus ~ .alert {
+  display: none;
+}
+.span5:focus ~ .alert {
+  display: block;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div> 
+<span class="span3" tabindex="0">Hide Me</span>
+<span class="span2" tabindex="0">Show Me</span>
+<p class="alert" >Some alarming information here</p>
+</div> 
+
+<div> 
+<span class="span4" tabindex="0">Hide Me</span>
+<span class="span5" tabindex="0">Show Me</span>
+<p class="alert" ><img src="alice.jpg"></p>
+</div> 
+
+</body>
+</html>
