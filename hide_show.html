@@ -24,6 +24,37 @@ body { display: none;
 
 </style>
 
+<script src="https://cdn.netpie.io/microgear.js"></script>
+    <script>
+      const APPID     = "CNX";
+      const APPKEY    = "WcXSLLlYIhHUXQE";
+      const APPSECRET = "f5ZFFwww0UYXfM1Xk7Lu0A7n4";
+    
+      var microgear = Microgear.create({
+        key: APPKEY,
+        secret: APPSECRET,
+        alias : "ppn"         /*  optional  */
+      });
+    
+      microgear.on('message',function(topic,msg) {
+        console.log("on message");
+      });
+    
+      microgear.on('connected', function() {
+        microgear.setAlias('ppn');    /* alias can be renamed anytime with this function */
+        console.log("on conencted")
+      });
+    
+      microgear.on('present', function(event) {
+       // console.log(event);
+      });
+    
+      microgear.on('absent', function(event) {
+        console.log(event);
+      });
+    
+      microgear.connect(APPID);
+    </script>
 
 </head>
 
