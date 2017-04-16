@@ -1,38 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-<style>
-<style>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <style>
+        body {
+            display: none;
+        }
 
-body { display: none;
-}
-.span3:focus ~ .alert {
-  display: none;
-}
-.span2:focus ~ .alert {
-  display: block;
-}
+        .span3:focus ~ .alert {
+            display: none;
+        }
 
-.span4:focus ~ .alert {
-  display: none;
-}
-.span5:focus ~ .alert {
-  display: block;
-}
+        .span2:focus ~ .alert {
+            display: block;
+        }
 
-</style>
+        .span4:focus ~ .alert {
+            display: none;
+        }
+
+        .span5:focus ~ .alert {
+            display: block;
+        }
+
+
+    </style>
 
 
 </head>
 
 <body>
-<div> 
-<span class="span3" tabindex="0">Hide Me</span>
-<span class="span2" tabindex="0">Show Me</span>
-<p class="alert" >Some alarming information here</p>
-</div> 
+<div>
+    <span class="span3" tabindex="0">Hide Me</span>
+    <span class="span2" tabindex="0">Show Me</span>
+    <p class="alert">Some alarming information here</p>
+</div>
 
 
 </body>
